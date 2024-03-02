@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Abd-Elmoniem | Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GC30RM0E2H"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GC30RM0E2H');
+</script>
+<meta name="description"
+    content="Welcome to the official website of Mohammad Abd-Elmoniem, also known as Mohammad Abdelmoniem to some. This site showcases the academic and professional journey of Mohammad Abd-Elmoniem, a distinguished alumnus of the University of Maryland. Dive into the world of Mohammad, explore his portfolio, and connect at hamada@umd.edu for insights and collaborations.">
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.75;
+            color: #444;
+            scroll-behavior: smooth;
+            margin: auto;
+            background-color: #fdfdfd;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .contant-wrapper {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        /* Sizes for headers adjusted as needed */
+        h1 {
+            font-size: 2.25em;
+        }
+
+        h2 {
+            font-size: 1.75em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        /* And so on for h4, h5, h6 */
+
+        p,
+        ul,
+        ol,
+        blockquote,
+        pre {
+            margin-bottom: 20px;
+        }
+
+        ul,
+        ol {
+            padding-left: 40px;
+        }
+
+        blockquote {
+            border-left: 5px solid #eee;
+            padding-left: 20px;
+            color: #666;
+            font-style: italic;
+            background-color: #f9f9f9;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        code,
+        pre code {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            padding: 4px 8px;
+            font-size: 0.95em;
+        }
+
+        pre {
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            /* Ensure it doesn't exceed the container's width */
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .figma-embed iframe,
+        .youtube-embed iframe {
+            width: 100%;
+            /* Adjusted to fit the container */
+            height: 100%;
+            border: 0;
+        }
+
+        .figma-embed,
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Maintain aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .figma-embed iframe,
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* Adjusted to match the container's width */
+            height: 100%;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the " next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add
+        a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0,
+                    0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display:
+                inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /*
+        Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity:
+                    .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #4db8ff;
+        }
+
+        .navbar {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                /* Hide
+        navigation links on smaller screens */
+            }
+
+            /* Additional styles for a mobile menu icon can be added here */
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 0;
+            /* Set the top edge of the navbar
+        to stick at the top of the screen */
+            z-index: 1000;
+            /* Ensure the navbar stays on top of other content */
+            backdrop-filter: blur(5px);
+            /* Apply a blur effect to the background behind the navbar */
+            -webkit-backdrop-filter: blur(5px);
+            /* For Safari */
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Optional:
+        Add a slight background color to enhance the blur effect */
+            /* Your other navbar styles here */
+        }
+
+        .gallery-container {
+            overflow-x: auto;
+            /* Enables horizontal scrolling */
+            white-space: nowrap;
+            /* Ensures all
+        items are in a single line */
+        }
+
+        .image-gallery img {
+            vertical-align: middle;
+            /* Aligns images in case they have
+        different heights */
+            max-height: 300px;
+            /* Adjust this value to set your desired height */
+            margin-right: 10px;
+            /* Adjust the gap between images */
+            display: inline-block;
+        }
+
+        .gallery-container .image-gallery iframe,
+        .gallery-container .image-gallery img {
+            vertical-align: top;
+            /* Aligns the top edges of the iframe and images */
+        }
+
+        .fancy-button {
+            display: inline-block;
+            background-color: red;
+            /* Button color */
+            color: white;
+            /* Text color
+        */
+            padding: 10px 20px;
+            /* Button padding */
+            text-decoration: none;
+            /* Remove underline from link */
+            font-weight:
+                bold;
+            /* Make the text bold */
+            border-radius: 5px;
+            /* Rounded corners */
+            transition: all 0.3s ease;
+            /* Smooth
+        transition for all changes */
+            position: relative;
+            /* Needed for arrow positioning */
+            overflow: hidden;
+            /*
+        Ensures the pseudo-elements don't overflow the button's boundaries */
+        }
+
+        .fancy-button:hover {
+            background-color:
+                darkred;
+            /* Darker shade on hover */
+        }
+
+        .fancy-button .arrow {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            /* Smooth transition for the arrow movement */
+        }
+
+        .fancy-button:hover .arrow {
+            transform: translateX(5px);
+            /* Move the arrow to the right on hover */
+        }
+
+        .fancy-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            /* Light overlay for
+        a 'shine' effect */
+            transition: all 0.3s ease;
+            transform: skewX(-20deg);
+        }
+
+        .fancy-button:hover::before {
+            left:
+                100%;
+        }
+
+        .google-play-button {
+            display: inline-block;
+            background-color: #00A862;
+            /* Google Play green */
+            color:
+                white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+        .google-play-button .arrow {
+            display: inline-block;
+            margin-left: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .google-play-button:hover,
+        .google-play-button:focus {
+            background-color: #008F7A;
+            /* A slightly
+        darker green for hover state */
+            transform: translateY(-2px);
+        }
+
+        .google-play-button:hover .arrow,
+        .google-play-button:focus .arrow {
+            transform: translateX(5px);
+        }
+
+        /* For the Google Play icon */
+        .fab.fa-google-play {
+            margin-right: 8px;
+        }
+
+        footer {
+            margin-top: 70px;
+        }
+    </style>
+
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="#contact-information">Contact</a></li>
+            <li><a href="#professional-summary">Summary</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills-heading">Skills</a></li>
+            <li><a href="#job-experience">Experience</a></li>
+            <li><a href="#leadership-involvement">Leadership</a></li>
+            <li><a href="#projects-header">Projects</a></li>
+            <li><a href="#extra-courses">Extra Courses</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div class="contant-wrapper">
+        <h1 id="mohammad-k-abd-elmoniem" style="font-size: 120px;">Mohammad <br> Abd-Elmoniem</h1>
+        <h2 id="contact-information">Contact Information</h2>
+        <ul>
+            <li><strong>Phone:</strong> <a href="tel:+1-240-390-7207">(240) 390-7207</a></li>
+            <li><strong>Website:</strong> <a href="http://momoniem.com">momoniem.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hamada@umd.edu">hamada@umd.edu</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/-mae/">in/-mae</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/madamoniem?tab=repositories">madamoniem</a></li>
+            <li><strong>Location:</strong> Lanham, Maryland</li>
+        </ul>
+        <hr>
+
+        <h2 id="professional-summary">Professional Summary</h2>
+        <p>As a Computer Engineering and Business Management undergraduate junior, I've honed my skills in
+            bridging the gap between complex technical theories and their practical applications. My journey has been
+            defined
+            by direct involvement in software engineering, system integration, and data analysis, shaping a path focused
+            on
+            technological innovation. My experience ranges from leading team-based projects with notable companies such
+            as General Dynamics to tackling independent and freelance ventures. This trajectory has been driven by a
+            deep
+            interest in cross-platform development and emergent computing systems. I'm committed to exploring the
+            frontiers of engineering research, aiming to bring a unique perspective to the dynamic field of technology.
+        </p>
+        <hr>
+        <h2 id="education">Education</h2>
+        <h3 id="university-of-maryland-college-park">University of Maryland - College Park</h3>
+        <ul>
+            <li><strong>Duration:</strong> Jan 2023 - May 2025</li>
+            <li><strong>Degree:</strong> B.S Computer Engineering and Business Management</li>
+            <li><strong>GPA:</strong> 3.6 (overall institutions)</li>
+            <li><strong>Involvements:</strong> Co-founder and Tech Lead at the App Dev Club, Bitcamp 2023 and 2024
+                Workshop
+                Presenter and Mentor, Secretary and President of AI/ML at the Cloud Computing Club, and member of XR
+                club.
+            </li>
+        </ul>
+        <h3 id="prince-george-s-community-college">Prince George’s Community College</h3>
+        <ul>
+            <li><strong>Duration:</strong> Jan 2021 - Dec 2022</li>
+            <li><strong>Degree:</strong> A.S General Studies</li>
+            <li><strong>GPA:</strong> 3.8</li>
+            <li><strong>Involvements:</strong> Co-founder and Vice President of the Gaussian Club of Mathematics, 2nd
+                place
+                Student AMATYC Math League, STEM Week presenter, full ride Promise Scholarship and Club Leader Award
+                recipient,
+                member of SRC (Student Research Club), Diverse Male Student Initiative, and Phi Theta Kappa.</li>
+        </ul>
+        <hr>
+        <h2 id="skills-heading">Skills</h2>
+        <dl>
+            <dt><strong>Programming Languages:</strong></dt>
+            <dd>Proficient in <code>Dart</code>, <code>Python</code>, <code>Java</code>, <code>HTML</code>,
+                <code>CSS</code>,
+                <code>JavaScript</code>, <code>SQL</code>, <code>PHP</code>, and <code>C</code>. Comprehensive
+                experience in software engineering principles and practices across various programming paradigms.
+            </dd>
+
+            <dt><strong>Data Science & Visualization:</strong></dt>
+            <dd>Advanced proficiency in <code>Matplotlib</code>, <code>Seaborn</code>, and <code>Pandas</code> for data
+                visualization and analysis. Skilled in statistical modeling, predictive analytics, and utilizing data
+                science methodologies to derive insights and inform decision-making processes.</dd>
+
+            <dt><strong>Machine Learning & Artificial Intelligence:</strong></dt>
+            <dd>Expert in <code>TensorFlow</code> and proficient in <code>PyTorch</code> for developing machine learning
+                models.
+                Extensive experience in constructing and optimizing <mark>Convolutional Neural Networks (CNNs)</mark>,
+                <mark>U-Nets</mark>, and implementing <mark>Natural Language Processing (NLP)</mark> and
+                <mark>Understanding (NLU)</mark> for deep learning applications. Demonstrated ability in image
+                classification, computer vision, and algorithm development for AI-driven solutions.
+            </dd>
+
+            <dt><strong>Mobile & Web Development:</strong></dt>
+            <dd>Experienced in cross-platform mobile application development using <code>Flutter</code>, including
+                Android and iOS platforms. Proficient in web development technologies and frameworks, ensuring
+                responsive and efficient user experiences.</dd>
+
+            <dt><strong>Technical Software & Tools:</strong></dt>
+            <dd>Skilled in using integrated development environments (IDEs) and technical software such as
+                <code>Visual Studio Code (VS Code)</code>, <code>Figma</code>, <code>Android Studio</code>,
+                <code>Jupyter Notebook</code>, <code>MatLab</code>, <code>Verilog</code>, <code>CircuitLab</code>, and
+                <code>WaveForms</code>. Familiarity with version control systems like <code>Git</code> for collaborative
+                coding and code management.
+            </dd>
+
+            <dt><strong>UI/UX Design:</strong></dt>
+            <dd>Strong foundation in UI/UX design principles, adept at creating user-centered interfaces that enhance
+                user experience. Proficient in wireframing, prototyping, and user testing to ensure engaging and
+                accessible digital products.</dd>
+
+            <dt><strong>Cloud Computing:</strong></dt>
+            <dd>Experienced with cloud services and infrastructure, including <code>Google Cloud Platform (GCP)</code>,
+                for application hosting, deployment, and scalable computing solutions. Knowledgeable in cloud
+                architecture and security best practices.</dd>
+
+            <dt><strong>Database Management:</strong></dt>
+            <dd>Proficient in database design and management using <code>Firebase</code> for real-time applications and
+                <code>MongoDB</code> for NoSQL database architectures. Skilled in SQL for relational database management
+                and data manipulation.
+            </dd>
+
+            <dt><strong>Embedded Systems & Hardware:</strong></dt>
+            <dd>Knowledge in embedded systems design and development, including the use of microcontrollers and FPGA
+                with <code>Verilog</code>. Understanding of digital and analog circuit design, PCB layout, and
+                simulation.</dd>
+
+            <dt><strong>Networking & Security:</strong></dt>
+            <dd>Basic understanding of network protocols, cybersecurity fundamentals, and secure coding practices to
+                protect data and maintain application security.</dd>
+        </dl>
+        <hr>
+
+        <h2 id="job-experience">Job Experience</h2>
+        <h3 id="evolv-technology">Evolv Technology</h3>
+        <ul>
+            <li><strong>Position:</strong> Machine Learning Consultant</li>
+            <li><strong>Duration:</strong> Jan 2024 - Present</li>
+            <li><strong>Key Achievements:</strong>
+                <ul>
+                    <li><mark>Recruited directly from Duke University's <abbr
+                                title="Research Experiences for Undergraduates">REU</abbr> program due to
+                            research in microwave image restoration</mark>, leading to corporate interest
+                        in
+                        commercial applications.</li>
+                    <li>Improving NEAR with layers like <em>pyramidal attention mechanisms</em>, <em>global context
+                            awareness</em>, and <em>squeeze-and-excite blocks</em>, <strong>edge preservation
+                            strategies</strong>, <em>Swin Transformer layers</em>, and both <em>octave and gated
+                            convolution
+                            blocks</em> - pivotal in elevating SSIM scores from 30% to 94% even in heavily corrupted
+                        images,
+                        demonstrating the commercial viability of REU-initiated research.</li>
+                    <li>Optimizing model performance using TensorFlow's <code>RAdam</code>, <code>Lamb</code>,
+                        and
+                        <code>Adaptive Gradient Clipping</code> optimizers, in tandem with Keras, for fine-tuning
+                        hyperparameters, ensuring peak model efficiency and accuracy in real-time applications.
+                    </li>
+                    <li>Developing image preprocessing pipelines using <code>OpenCV</code> and <code>PIL</code>.
+                        This
+                        process is enhanced with data augmentation techniques, including random patching,
+                        advanced
+                        affine transformations, and elastic distortions, ensuring comprehensive training robustness.
+                    </li>
+                    <li>Crafting specialized loss functions within TensorFlow, such as the <em>Charbonnier loss</em>
+                        coupled
+                        with perceptual and adversarial loss components, to accentuate essential features for
+                        through-wall
+                        imaging.</li>
+                    <li>Conducting extensive model performance evaluations using a suite of metrics like
+                        <em>DSSIM</em>, <em>PSNR</em>, <em>MSE</em>, and <em>Normalized Cross-Correlation (NCC)</em>,
+                        for a
+                        thorough and rigorous analysis of the image restoration capabilities, as well as training open
+                        source
+                        PyTorch models from the <code>KAIR Github repository</code>.
+                    </li>
+                    <li>Committing to the highest standards of code quality and maintainability in Python, strictly
+                        adhering
+                        to
+                        <code>PEP 8 guidelines</code> and leveraging <code>Git</code> for version control and
+                        project
+                        management.
+                    </li>
+                    <li>Meticulously documenting each phase of model development, including comprehensive records of
+                        performance
+                        benchmarks and validation outcomes, ensuring clarity and reproducibility of results.</li>
+                    <li>Engaging in iterative model enhancement and advanced techniques like <em>Bayesian
+                            optimization</em>,
+                        to
+                        adapt and evolve the NEAR model for diverse and complex imaging scenarios, meeting the evolving
+                        demands
+                        of through-wall imaging technology.</li>
+                    <li>Innovating on NEAR's architecture to process complex-valued inputs for phase signature analysis,
+                        crucial
+                        for detecting weakly scattering dielectrics, using advanced two-channel image processing
+                        techniques
+                        (real and imaginary components).</li>
+                    <li>Conducting computation time investigations, including the quantification of processing times and
+                        identification of potential hardware/software enhancements. Implemented sensitivity studies to
+                        evaluate
+                        the effects of input image discretization, successfully reducing image pixel density to expedite
+                        computation towards real-time processing capabilities.</li>
+                    <li>Performing ablation studies focused on optimizing neural network size and computation time,
+                        streamlining
+                        the model for efficient performance in challenging metasurface data applications.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <img src="images/duke REU/Copper GIF.gif"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Copper GIF Image]">
+                <img src="images/duke REU/DU-GIF.gif"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of DU-GIF Image]">
+                <img src="images/duke REU/889 SSIM.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of 889 SSIM Image]">
+                <img src="images/duke REU/2 legged.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of 2 Legged Image]">
+                <img src="images/duke REU/DU.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of DU Image]">
+                <img src="images/duke REU/DU 2.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of DU 2 Image]">
+                <img src="images/duke REU/quad img.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Quad Image]">
+            </div>
+        </div>
+
+
+        <h3 id="catt-laboratory">CATT Laboratory</h3>
+        <ul>
+            <li><strong>Position:</strong> Software Engineer</li>
+            <li><strong>Duration:</strong> Dec 2023 - March 2024</li>
+            <li><strong>Key Achievements:</strong>
+                <ul>
+                    <li>Engineered a <mark>cross-platform incident management application</mark>, integrating diverse OS
+                        compatibility (<abbr title="Operating Systems">iOS, Android, Windows, MacOS, Linux,
+                            Web</abbr>)</em>.</li>
+                    <li>Implemented a <code>GPS-based location-tracking system</code>, utilizing <em>geospatial
+                            engineering</em>,
+                        enhancing
+                        emergency response units' situational awareness.</li>
+                    <li>Developed <mark>multimedia processing functionalities</mark>, integrating image processing
+                        algorithms
+                        and video codec optimization for emergency scenario geo-tagging, within <em>digital signal
+                            processing</em> and <em>embedded multimedia systems</em>.</li>
+                    <li>Designed a user interface incorporating <code>OpenStreetMap</code>, applying <abbr
+                            title="Geographic Information System">GIS</abbr> and <em>spatial database design</em>,
+                        essential
+                        for
+                        dynamic incident mapping and data visualization.</li>
+                    <li>Orchestrated real-time data communication with command centers, employing network protocols,
+                        <code>RESTful API</code> design, and <abbr
+                            title="Secure Sockets Layer/Transport Layer Security">SSL/TLS</abbr> encryption, ensuring
+                        secure
+                        data transmission.
+                    </li>
+                    <li>Enhanced application responsiveness through <mark>asynchronous programming</mark>, employing
+                        concurrency
+                        models and real-time data streaming, in <em>embedded system design</em>.</li>
+                    <li>Integrated <code>Bitbucket</code>, <code>Jira</code>, and <code>Confluence</code> within the
+                        project's
+                        workflow, managing version control, issue tracking, and documentation. Leveraged
+                        <code>MongoDB</code>
+                        for efficient cloud storage, facilitating real-time data transmission to the command center.
+                    </li>
+                    <li>Created a local data storage system using <code>SQL</code> and <code>NoSQL technologies</code>,
+                        ensuring
+                        <abbr title="Atomicity, Consistency, Isolation, Durability">ACID</abbr> compliance and cloud
+                        service
+                        synchronization, demonstrating <em>database architecture</em> and <em>cloud computing
+                            integration</em>.
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <iframe height="300" width="300" src="https://youtube.com/embed/jaFAkbn1Q2c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <img src="images/RITIS tracker/Screenshot_1708876729.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708876729]">
+                <img src="images/RITIS tracker/Screenshot_1708876747.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708876747]">
+                <img src="images/RITIS tracker/Screenshot_1708876754.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708876754]">
+                <img src="images/RITIS tracker/Screenshot_1708878128.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708878128]">
+                <img src="images/RITIS tracker/Screenshot_1708878294.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708878294]">
+                <img src="images/RITIS tracker/Screenshot_1708878313.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708878313]">
+                <img src="images/RITIS tracker/Screenshot_1708878394.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1708878394]">
+
+            </div>
+        </div>
+
+        <h3 id="app-dev-club-x-general-dynamics">App Dev Club x General Dynamics</h3>
+        <ul>
+            <li><strong>Position:</strong> Software Engineer Lead</li>
+            <li><strong>Duration:</strong> Aug 2023 - May 2024</li>
+            <li><strong>Key Achievements:</strong>
+                <ul>
+                    <li>Directed a joint project with <strong>General Dynamics</strong>, leading a team of eight
+                        students in
+                        the
+                        R&D of a <mark>cross-platform mobile app</mark> focusing on advanced group coordination and
+                        dynamic
+                        data
+                        management.</li>
+                    <li>Managed the project's entire lifecycle, from initial contract negotiations through to
+                        <em>agile-based
+                            development cycles</em> and final product delivery, utilizing <abbr
+                            title="Scrum">Scrum</abbr>
+                        techniques and continuous integration/deployment strategies.
+                    </li>
+                    <li>Engineered the app's geolocation features using <code>haversine formula</code> and
+                        <code>k-means clustering algorithms</code> for precise user location tracking and data analysis.
+                    </li>
+                    <li>Integrated <code>Google Maps Places API</code>, employing RESTful web services and JSON parsing
+                        for
+                        constructing an in-house location history viewer with detailed user movement visualization.</li>
+                    <li>Implemented NLP functionalities, using <code>TensorFlow</code> and <code>Python Flask</code>,
+                        hosted
+                        on
+                        <code>Google Cloud</code>, for efficient email topic summarization and content analysis.
+                    </li>
+                    <li>Developed the backend and frontend using <code>Firebase</code> and <code>Flutter</code>,
+                        applying
+                        <abbr title="Model-View-ViewModel">MVVM</abbr> architectural patterns for a cohesive and
+                        responsive
+                        user
+                        interface on Android.
+                    </li>
+                    <li>Coordinated project tasks and team communication using tools like <code>Slack</code> and
+                        <code>Monday.com</code>, aligning with the project's timelines and ensuring effective team
+                        collaboration
+                        and task tracking.
+                    </li>
+                    <li>Innovated user-focused features, including an automated 'do not disturb' system linked with
+                        calendar
+                        APIs, enhancing user experience through thoughtful, automated interactions.</li>
+                </ul>
+
+            </li>
+        </ul>
+
+
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <iframe height="300" width="500" src="https://www.youtube.com/embed/6n5V8hSIxAY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <img src="images/ADC GD Co-op/Screenshot_1698405448.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1698405448]">
+                <img src="images/ADC GD Co-op/Screenshot_1698405448.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1698405448 Duplicate]">
+                <img src="images/ADC GD Co-op/Screenshot_1702946726.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1702946726]">
+                <img src="images/ADC GD Co-op/Screenshot_1702957513.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1702957513]">
+                <img src="images/ADC GD Co-op/Screenshot_1702994820.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1702994820]">
+                <img src="images/ADC GD Co-op/Screenshot_1702994914.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1702994914]">
+                <img src="images/ADC GD Co-op/Screenshot_1702995134.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Screenshot 1702995134]">
+
+            </div>
+        </div>
+        <h3 id="duke-university-pratt-school-of-engineering">Duke University - Pratt School of Engineering</h3>
+        <ul>
+
+            <li><strong>Position:</strong> Summer Research Intern | 2023 REU Participant</li>
+            <li><strong>Duration:</strong> May 2023 - Aug 2023</li>
+            <li><strong>Key Achievements:</strong>
+
+                <ul>
+                    <a href="images/duke REU/Duke ECE REU Poster.png" target="_blank" class="fancy-button"
+                        style="font-family:'Poppins">
+                        View REU Poster <span class="arrow">&#10142;</span>
+                    </a>
+                    <li>Conducted research at <strong>Duke University</strong> under <em>Dr. Aaron Diebold</em> and
+                        <em>Professor David R. Smith</em>, focusing on optical sensor application and image denoising
+                        within
+                        the
+                        realm of microwave imaging.
+                    </li>
+                    <li>Developed a cost-effective and practical optical sensor integration with <code>Arduino</code>,
+                        optimized
+                        for quality image reconstruction while maintaining accuracy standards and a small form factor.
+                    </li>
+                    <li>Implemented a Python-based data acquisition and framework using <code>PySerial</code>,
+                        interfacing
+                        with
+                        Arduino to monitor and collect data from the optical sensor.</li>
+                    <li>Engineered a custom 3D-printed CAD enclosure for sensor hardware using
+                        <code>Autodesk Fusion 360</code>,
+                        achieving a tailored fit and protection for the device.
+                    </li>
+                    <li>Conducted exhaustive testing to validate the sensor system's accuracy, achieving consistent
+                        spatial
+                        data
+                        precision vital for microwave imaging applications.</li>
+                    <li>Developed a convolutional neural network (CNN) model, named <strong>NEAR-MI</strong>
+                        (<mark>Noise
+                            Elimination and Advanced Restoration for Microwave Imaging</mark>) with attention gates and
+                        squeeze-and-excitation blocks paired with <code>ResNet50</code> using <code>Tensorflow</code>
+                        and
+                        <code>Keras</code>, significantly improving image denoising, reconstruction, and enhancement of
+                        low
+                        bandwidth microwave imaging applications.
+                    </li>
+                    <li>Applied the CNN model to experimental metasurface data, confirming its effectiveness and utility
+                        in
+                        practical imaging scenarios.</li>
+                    <li>Created a sophisticated dataset containing pairs of thousands of noisy and clean microwave
+                        images,
+                        crafting each pair to train the denoising model with high precision and accuracy.</li>
+                    <li>Employed rigorous statistical analysis using metrics such as <abbr
+                            title="Peak Signal-to-Noise Ratio">PSNR</abbr>, <abbr
+                            title="Structural Similarity Index">SSIM</abbr>, and <abbr
+                            title="Normalized Cross-Correlation">NCC</abbr> to measure and demonstrate the model's noise
+                        reduction capabilities and detail retention.</li>
+                    <li>Currently engaging in a collaborative writing effort focusing on a research paper that
+                        comprehensively
+                        documents the dataset creation, intricate model architecture, performance metrics, and
+                        comparative
+                        analysis with other models in the field of imaging denoising and enhancement.</li>
+                </ul>
+
+            </li>
+        </ul>
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <img src="images/duke REU/image 107.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 107]">
+                <img src="images/duke REU/image 108.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 108]">
+                <img src="images/duke REU/image 109.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 109]">
+                <img src="images/duke REU/autodesk.jpg"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Autodesk Image]">
+                <img src="images/duke REU/1.jpg"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 1]">
+                <img src="images/duke REU/2.jpg"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 2]">
+                <img src="images/duke REU/3.jpg"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 3]">
+                <img src="images/duke REU/optical sensor.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Optical Sensor]">
+                <img src="images/duke REU/ai comp.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of AI Competition Image]">
+                <img src="images/duke REU/ai comp 2.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of AI Competition Image 2]">
+            </div>
+        </div>
+        <h3 id="youth-crisis-line">Youth Crisis Line</h3>
+        <ul>
+            <li><strong>Position:</strong> Software Engineer</li>
+            <li><strong>Duration:</strong> May 2022 - Aug 2022</li>
+            <li><strong>Key Achievements:</strong>
+                <ul>
+                    <a href="https://play.google.com/store/apps/details?id=org.islamicleadership.yclcaller"
+                        target="_blank" class="google-play-button">
+                        <i class="fab fa-google-play"></i> View on Google Play <span class="arrow">&#10142;</span>
+                    </a>
+
+                    <li>Led the engineering of four mobile applications using <code>Flutter</code> and
+                        <code>Dart</code>,
+                        targeting platforms including iOS and Android, focusing on modular design and responsive UI/UX
+                        principles.
+                    </li>
+                    <li>Designed the applications' UI, employing <strong>Material Design</strong> principles and
+                        <code>Flutter</code> widgets for an intuitive, visually engaging user experience, tailored to
+                        the
+                        organization's brand identity.
+                    </li>
+                    <li>Architected and implemented a robust authentication system, bolstering user data security with
+                        features
+                        like login, registration, email verification, password recovery, and data deletion, ensuring
+                        compliance
+                        with data protection standards.</li>
+                    <li>Implemented an AES-encrypted chat module using <code>Firebase Realtime Database</code>, ensuring
+                        end-to-end encryption for secure, confidential user-staff communication.</li>
+                    <li>Led the app's design and graphical interface, creating an intuitive, aesthetically pleasing user
+                        experience, and aligning with the organization's branding and user engagement goals.</li>
+                    <li>Managed the app deployment lifecycle, handling CI/CD pipelines, beta testing phases, and app
+                        store
+                        optimization (<abbr title="App Store Optimization">ASO</abbr>) for successful launches on the
+                        iOS
+                        App
+                        Store and Google Play Store.</li>
+                    <li>Developed cloud functions and Firestore rules in <code>Firebase</code>, optimizing data
+                        management
+                        and
+                        real-time synchronization across multi-user environments, contributing to the mission of
+                        enhancing
+                        community support.</li>
+                </ul>
+
+            </li>
+        </ul>
+        <div class="gallery-container">
+            <div class="image-gallery">
+                <!-- YCL App Images -->
+                <img src="images/YCL App/YCLflyer-min.png"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of YCL Flyer]">
+                <img src="images/YCL App/img 1.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 1]">
+                <img src="images/YCL App/img 2.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 2]">
+                <img src="images/YCL App/img 3.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 3]">
+                <img src="images/YCL App/img 4.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 4]">
+                <img src="images/YCL App/img 5.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 5]">
+                <img src="images/YCL App/img 6.webp"
+                    alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of Image 6]">
+
+            </div>
+        </div>
+        <hr>
+        <h2 id="leadership-involvement">Leadership &amp; Involvement</h2>
+        <h3 id="app-dev-club-university-of-maryland">App Dev Club, University of Maryland</h3>
+        <ul>
+            <li><strong>Role:</strong> Cofounder, Tech Lead, and Mentor</li>
+            <li><strong>Achievements:</strong>
+                <ul>
+                    <li>Instrumental in evolving the <abbr title="Application Development Club">App Dev Club</abbr> from
+                        its
+                        nascent stages to becoming the third largest student organization at <abbr
+                            title="University of Maryland">UMD</abbr>, cultivating a community of nearly <mark>800
+                            members</mark> passionate about application and software development.</li>
+                    <li>Leveraged <strong>leadership acumen</strong> to mentor and guide club members, fostering a
+                        culture
+                        of
+                        <em>innovation</em>, technical skill-building, and collaborative software creation.
+                    </li>
+                    <li>Implemented strategic outreach and engagement initiatives, amplifying the club's visibility and
+                        attractiveness to students from diverse academic backgrounds.</li>
+
+                    <li>Piloted a series of developmental workshops and hackathons, bolstering practical tech skills
+                        pertinent
+                        to real-world applications and cementing the club's standing as a cornerstone of UMD's STEM
+                        community.
+                    </li>
+                    <li>Presented a workshop event at the largest hackathon on the East Coast during <time
+                            datetime="2023">Bitcamp 2023</time> on <dfn
+                            title="Introduction to App Development">Introduction
+                            to
+                            App Development</dfn>, and will present four workshop events at <time
+                            datetime="2024">Bitcamp
+                            2024</time>, along with our newly established app development track in the hackathon.</li>
+                </ul>
+
+            </li>
+        </ul>
+        <h3 id="gaussian-club-of-mathematics-prince-george-s-community-college">Gaussian Club of Mathematics, Prince
+            George&#39;s Community College</h3>
+        <ul>
+            <li><strong>Role:</strong> Cofounder and Vice President</li>
+            <li><strong>Achievements:</strong>
+                <ul>
+                    <li>Co-launched the Gaussian
+                        Club of Mathematics</span>, rapidly scaling as one of the most prominent STEM organization on
+                        campus,
+                        galvanizing student and faculty collaboration in academia and research initiatives.</li>
+                    <li>Pioneered a campus-wide tutoring program, providing <mark>free mentorship</mark> and advancing
+                        educational equity for underprivileged students, fostering an inclusive academic support system.
+                    </li>
+                    <li>Engaged in strategic planning and execution of club operations, successfully securing resources
+                        and
+                        partnerships, which led to a sustainable model of <dfn>peer-led learning</dfn> and community
+                        engagement.
+                    </li>
+                    <li>Regularly convened with college officials to align club activities with institutional academic
+                        goals,
+                        reinforcing the club's role in contributing to the college's <abbr
+                            title="Educational Mission">EM</abbr>.</li>
+                    <li>Directed a team to manage a multitude of logistics, from <time>event coordination</time> to
+                        financial
+                        oversight, ensuring the club's initiatives were delivered effectively and had a lasting impact
+                        on
+                        the
+                        community.</li>
+                </ul>
+
+            </li>
+
+        </ul>
+        <hr>
+        <div class="projects-header">
+            <h2 id="projects-header">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">NEAR-MI Model GUI</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text"> The Near-MI GUI Viewer is an advanced Python-based interface, meticulously
+                        developed
+                        with PyQt, designed to offer a seamless and interactive experience in handling neural network
+                        models
+                        and
+                        image processing. This sophisticated tool enables users to effortlessly upload and utilize Keras
+                        model
+                        weights through h5 files, incorporating the flexibility to define and integrate custom objects
+                        tailored
+                        to their specific computational needs. A standout feature of this application is its
+                        comprehensive
+                        support for diverse file formats, including images, CSV, pickle, and text files, alongside a
+                        unique
+                        functionality for uploading and deconstructing GIFs into individual frames for detailed
+                        analysis.
+                        Users
+                        are endowed with the capability to apply or invert colormaps on their inputs, enhancing the
+                        visual
+                        representation and interpretability of their data. The Near-MI GUI Viewer excels in bulk image
+                        processing, allowing for efficient handling of multiple files simultaneously, thereby
+                        streamlining
+                        the
+                        workflow. Upon processing, it offers versatile export options: users can consolidate their
+                        results
+                        into
+                        a singular composite image, export them as separate files, or amalgamate them into a GIF,
+                        showcased
+                        in a
+                        dynamic slideshow format as illustrated in image 9 of the application's gallery. This tool
+                        exemplifies a
+                        significant convergence of image processing, neural network model manipulation, and interactive
+                        GUI
+                        development, showcasing a comprehensive skill set in Python programming, PyQt framework mastery,
+                        and
+                        a
+                        deep understanding of Keras for AI model integration.
+                    </p>
+                    <div class="slideshow-container" id="slideshow2">
+                        <!-- Full-width images with number and caption text -->
+                        <!-- near-mi gui Images -->
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 1.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 1]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 2.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 2]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 3.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 3]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 4.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 4]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 5.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 5]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 6.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 6]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 7.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 7]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 8.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 8]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 9.gif"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 9]"
+                                width="100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/near-mi gui/gui 10.png"
+                                alt="Mohammad Abd-Elmoniem Mohammad Abdelmoniem Mohamed Abdelmoniem - [Detailed Description of GUI 10]"
+                                width="100%">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(4, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(5, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(6, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(7, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(8, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(9, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(10, 'slideshow2')"></span>
+
+
+                    </div>
+                </section>
+            </article>
+
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">PAA5100JE/PMW3901 Arduino Python Reader</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text">
+                        In developing the PAA5100JE/PMW3901 Arduino Python Reader, I leveraged the PySerial library to
+                        establish
+                        serial communication between the Python environment and the Arduino microcontroller, reading
+                        data
+                        from
+                        the PAA5100JE and PMW3901 optical flow sensors. The integration process involved utilizing
+                        Bitcraze's
+                        Arduino driver, configuring the Arduino IDE for library inclusion, and scripting in the Arduino
+                        sketch
+                        to facilitate sensor data acquisition and transmission. On the Python side, the code employs
+                        serial
+                        port
+                        detection and data parsing techniques to interpret the X and Y movement counts transmitted by
+                        the
+                        Arduino, demonstrating a practical application of serial communication protocols and data
+                        handling
+                        in a
+                        cross-platform context. This project underscores skills in sensor integration, data stream
+                        processing,
+                        and cross-language communication, illustrating the technical nuances of interfacing hardware
+                        with
+                        high-level programming languages for real-time data analysis. <a
+                            href="https://github.com/madamoniem/PAA5100JE-PMW3901-Arduino-Python-Reader"
+                            target="_blank">GitHub
+                            Repository</a>
+                    </p>
+                </section>
+            </article>
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">Text To Speech & Soundboard</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text">
+                        I utilized PyQT to create an interactive system for converting text input into real-time audio.
+                        I
+                        integrated Azure TTS and gTTS services, leveraging their speech synthesis capabilities for
+                        naturalistic
+                        audio output. To direct synthesized speech into the user's microphone, I used the VB-CABLE
+                        Virtual
+                        Audio
+                        Device, facilitating seamless audio routing. Additionally, I allowed users to store audio files
+                        in a
+                        customizable soundboard for easy playback through their microphone. Expanding the tool's
+                        functionality,
+                        I enabled direct YouTube video link input, allowing users to play videos through their
+                        microphone,
+                        thus
+                        enhancing the utility of the application. This project showcased my proficiency in integrating
+                        sophisticated text-to-speech technologies and user interface design to create a versatile and
+                        practical
+                        application.
+
+                    </p>
+                    <figure class="image">
+                        <img src="images/tts gui/gui 1.png" alt="Text To Speech & Soundboard" itemprop="image"
+                            width="100%">
+                        <figcaption>Text To Speech & Soundboard</figcaption>
+                    </figure>
+                </section>
+            </article>
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">Pointly</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text">
+                        I engineered a family-oriented task management app, deploying Flutter's UI toolkit for
+                        cross-platform
+                        frontend development. Utilizing Dart language's asynchronous features, I integrated Firebase for
+                        seamless real-time database interactions and secure user authentication. I designed a modular
+                        architecture, implementing Model-View-Controller (MVC) patterns for efficient data handling and
+                        UI
+                        updates. The application featured complex user role management, leveraging Firebase's Cloud
+                        Firestore
+                        for dynamic data storage, enabling parents to assign tasks and track rewards. I deployed the app
+                        on
+                        Google Play using Gradle build automation and Fastlane for streamlined Continuous Integration
+                        and
+                        Delivery processes. This project showcased my ability to blend advanced frontend design with
+                        intricate
+                        backend systems, creating a holistic and responsive mobile application.
+                        &nbsp;
+                        <a href="https://play.google.com/store/apps/details?id=com.madamoniem.pointly"
+                            target="_blank">Google
+                            Play Listing</a> &nbsp;
+                        <a href="https://www.youtube.com/watch?v=_4uNoYFj0jA&ab_channel=MohammadAbd-Elmoniem"
+                            target="_blank">Youtube Demo</a>
+                    </p>
+                    <figure class="youtube-embed">
+                        <iframe src="https://www.youtube.com/embed/_4uNoYFj0jA" allowfullscreen></iframe>
+                        <figcaption>Interactive Prototype in Figma</figcaption>
+                    </figure>
+                </section>
+            </article>
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">WasHungry</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text">I utilized Flutter for cross-platform app development, focusing on intuitive
+                        UI/UX
+                        design
+                        for food donation management. The application integrated Google Cloud Platform's Firestore for
+                        scalable
+                        data storage, alongside Firebase Authentication for secure user identification. Geolocation
+                        features
+                        were implemented using Google Maps API, facilitating donor-recipient proximity matching. This
+                        project
+                        also incorporated RESTful API integration for efficient data handling and user interaction. The
+                        app's
+                        design and implementation underscored my technical proficiency in creating a socially impactful,
+                        feature-rich mobile application. <a
+                            href="https://www.figma.com/file/eDJwnISy6rRWDUALovs6oc/Untitled?node-id=0%3A1"
+                            target="_blank">View
+                            Prototype</a>
+                    </p>
+                    <figure class="figma-embed">
+                        <iframe
+                            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/eDJwnISy6rRWDUALovs6oc/Untitled?node-id=0%3A1"
+                            allowfullscreen></iframe>
+                        <figcaption>Interactive Prototype in Figma</figcaption>
+                    </figure>
+                </section>
+            </article>
+
+
+            <article class="project-card" itemscope itemtype="http://schema.org/CreativeWork">
+                <header class="project-header">
+                    <h3 itemprop="headline">TensorFlow Lite ML Integration in Mobile Apps</h3>
+                </header>
+                <section class="project-content">
+                    <p itemprop="text">In integrating TensorFlow Lite into mobile applications, I architected object
+                        recognition
+                        algorithms for diverse uses: a fruit/vegetable identifier, a pet classifier, and a handwriting
+                        analysis
+                        tool. Leveraging TF Lite's quantization and model optimization, I streamlined CNN architectures
+                        for
+                        mobile efficiency. Key processes involved dataset preprocessing with augmentation and feature
+                        scaling,
+                        enhancing model's adaptability to varied inputs. Deploying optimized models involved balancing
+                        inference
+                        speed and memory usage. This initiative illustrated my command in TensorFlow Lite's nuanced
+                        application
+                        to real-world, mobile-centric machine learning challenges. <a
+                            href="https://www.youtube.com/watch?v=db6dUlqRxJs" target="blank">Watch Demo
+                        </a>
+                    </p>
+                    <figure class="youtube-embed">
+                        <iframe src="https://www.youtube.com/embed/db6dUlqRxJs" allowfullscreen></iframe>
+                        <figcaption>Demo on Youtube</figcaption>
+                    </figure>
+                </section>
+            </article>
+        </div>
+        <hr>
+        <div class="extra-courses-header">
+            <h2 id="extra-courses">Extra Courses</h2>
+        </div>
+        <ul>
+            <li>The Complete 2021 Flutter Development Bootcamp with Dart: <a
+                    href="https://www.udemy.com/certificate/UC-8638c087-e564-44a2-ac73-a7f07004d2c0/"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Deep Learning Course with Flutter & Python - Build 6 AI Apps: <a
+                    href="https://www.udemy.com/certificate/UC-450f0acf-7c95-43cc-8c66-7d8f07d532b2/"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Profitable App Development Blueprint for Startups: <a
+                    href="https://www.udemy.com/certificate/UC-b8c3a797-b9e5-4b67-8d5c-cecf42d57662/"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>The Brain and Space: <a href="https://www.coursera.org/account/accomplishments/verify/WHLYMGC2N7YH"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Foundations of User Experience (UX) Design: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/27PMEGP43XBK"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Cloud Computing Basics (Cloud 101): <a
+                    href="https://www.coursera.org/account/accomplishments/verify/HBAPG5V9HKTN"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Powerful Tools for Teaching and Learning: Digital Storytelling: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/7ESKN4PJUGA7"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Statistics with SAS: <a href="https://www.coursera.org/account/accomplishments/verify/E5AFT6AC84B6"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Foundations of Mindfulness: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/LA6W9MCFYDXC"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Reasoning Across the Disciplines: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/LRLK8GJ98DF8"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Problem Solving Using Computational Thinking: <a
+                    href="https://coursera.org/share/3f6b3984ed8d21bef67ccb1a3fea0d1c"
+                    target="_blank"><em>Certificate</em></a>
+            </li>
+            <li>Introduction to Marketing: <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/ZA6N2CG2S4B4"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Innovation Through Design: Think, Make, Break, Repeat: <a
+                    href="https://coursera.org/share/34dedf6b39e591de716c2c9d3d268538"
+                    target="_blank"><em>Certificate</em></a>
+            </li>
+            <li>Car Transport App in Figma: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/R6YQHNG36KHM"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>Programming Foundations with JavaScript, HTML and CSS: <a
+                    href="https://www.coursera.org/account/accomplishments/verify/3ZVEHJ934LLX"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>PHP for Beginners - Become a PHP Master - CMS Project: <a
+                    href="https://www.udemy.com/certificate/UC-3556ae16-70bf-493e-9fac-e3b3e82cbcd8/"
+                    target="_blank"><em>Certificate</em></a></li>
+            <li>MATLAB Onramp Training: <a
+                    href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=72bd0164-a193-4cd8-9b17-7ec9970416ad"
+                    target="_blank"><em>Certificate</em></a></li>
+        </ul>
+        <hr>
+    </div>
+    <footer class="page-footer grey darken-4">
+        <div class="container" style="margin-bottom: 10vh; margin-top: 10vh; margin-left: 20vh;">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h2 class="white-text" style="font-size:8vh;">Mohammad Abd-Elmoniem</h2>
+                    <p class="grey-text text-lighten-4">Website created from <b>scratch</b> by <b>Mohammad
+                            Abd-Elmoniem</b>
+                    </p>
+                    <h5 class="white-text">Contact</h5>
+                    <p class="grey-text text-lighten-4">For info or business inquiries, please contact me at
+                        <b>hamadmaad@gmail.com </b>and I will get to you shortly.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12" style="font-size: 2.5vh;">
+                    <h5 class="white-text" style="font-size: 4vh;">Find Me @</h5>
+                    <ul>
+
+
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/madamoniem"
+                                target="_blank">Github</a></li>
+
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/-mae"
+                                target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright black">
+            <div class="container" style="margin-left: 20vh;">
+                © 2024 Copyright Mohammad Abd-Elmoniem
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img');
+            let overlay, enlargedImg, currentIndex, leftArrow, rightArrow;
+
+            function createOverlay() {
+                overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                overlay.style.display = 'flex';
+                overlay.style.justifyContent = 'center';
+                overlay.style.alignItems = 'center';
+                overlay.style.zIndex = '10000';
+
+                enlargedImg = document.createElement('img');
+                enlargedImg.style.maxWidth = '90%';
+                enlargedImg.style.maxHeight = '90%';
+                overlay.appendChild(enlargedImg);
+
+                // Create left and right navigation arrows
+                leftArrow = document.createElement('div');
+                leftArrow.innerHTML = '&#9664;'; // Left arrow symbol (◄)
+                leftArrow.style.position = 'absolute';
+                leftArrow.style.left = '20px';
+                leftArrow.style.fontSize = '2em';
+                leftArrow.style.color = 'white';
+                leftArrow.style.cursor = 'pointer';
+                overlay.appendChild(leftArrow);
+
+                rightArrow = document.createElement('div');
+                rightArrow.innerHTML = '&#9654;'; // Right arrow symbol (►)
+                rightArrow.style.position = 'absolute';
+                rightArrow.style.right = '20px';
+                rightArrow.style.fontSize = '2em';
+                rightArrow.style.color = 'white';
+                rightArrow.style.cursor = 'pointer';
+                overlay.appendChild(rightArrow);
+
+                // Add event listeners to arrows for navigation
+                leftArrow.addEventListener('click', function (e) {
+                    e.stopPropagation(); // Prevent overlay click event
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateImage();
+                });
+
+                rightArrow.addEventListener('click', function (e) {
+                    e.stopPropagation(); // Prevent overlay click event
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateImage();
+                });
+
+                document.body.appendChild(overlay);
+
+                // Close overlay on click
+                overlay.addEventListener('click', function () {
+                    document.body.removeChild(overlay);
+                });
+
+                // Close overlay with Esc key and navigate with arrow keys
+                document.addEventListener('keydown', function (e) {
+                    if (!overlay.parentNode) return; // Only if overlay is displayed
+
+                    if (e.key === 'Escape') {
+                        document.body.removeChild(overlay);
+                    } else if (e.key === 'ArrowRight') {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        updateImage();
+                    } else if (e.key === 'ArrowLeft') {
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        updateImage();
+                    }
+                });
+            }
+
+            function updateImage() {
+                enlargedImg.setAttribute('src', images[currentIndex].getAttribute('src'));
+            }
+
+            images.forEach(function (img, index) {
+                img.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    currentIndex = index;
+
+                    if (!overlay || !overlay.parentNode) {
+                        createOverlay();
+                    }
+
+                    updateImage();
+                });
+            });
+        });
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevents navigating to the image link
+                var img = this.querySelector('img');
+                // Check if the browser supports the Fullscreen API
+                if (img.requestFullscreen) {
+                    img.requestFullscreen(); // Opens the image in full-screen
+                }
+            });
+        });
+
+        // Initialize a slideIndex object to hold the index for each slideshow
+        var slideIndexes = {};
+
+        function plusSlides(n, slideshowId) {
+            showSlides(slideIndexes[slideshowId] += n, slideshowId);
+        }
+
+        function currentSlide(n, slideshowId) {
+            showSlides(slideIndexes[slideshowId] = n, slideshowId);
+        }
+
+        function showSlides(n, slideshowId) {
+            var i;
+            var slideshow = document.getElementById(slideshowId);
+            var slides = slideshow.getElementsByClassName("mySlides");
+            var dots = slideshow.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndexes[slideshowId] = 1; }
+            if (n < 1) { slideIndexes[slideshowId] = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndexes[slideshowId] - 1].style.display = "block";
+            dots[slideIndexes[slideshowId] - 1].className += " active";
+        }
+
+        // Initialize all slideshows on the page
+        function initializeSlideshows() {
+            var allSlideshows = document.getElementsByClassName("slideshow-container");
+            for (var i = 0; i < allSlideshows.length; i++) {
+                var id = allSlideshows[i].id;
+                slideIndexes[id] = 1;
+                showSlides(1, id);
+            }
+        }
+
+        // Call this function when the window loads to initialize slideshows
+        window.onload = initializeSlideshows;
+
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Get the target element's top position relative to the document
+                var targetID = this.getAttribute('href');
+                var target = document.querySelector(targetID);
+                var targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+
+                // Offset for navbar height and additional space (30 pixels in this case)
+                var offsetPosition = targetPosition - 100; // Adjust the '30' value as needed for your navbar height and desired space
+
+                // Smooth scroll to the offset position
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Mohammad Abd-Elmoniem",
+          "alternateName": ["Mohammad Abdelmoniem", "Mohammad Abd-Elmoniem", "Mohamed Abdelmoniem", "Mohammad Abd Elmoniem", "Mohammad Abd El Moniem", "Mohammad Abdel Moniem", "Mohamed Abd-Elmoniem", "Mohamed Abdel Moniem", "Mohamed Abd El Moniem", "Mohamed Abd Elmoniem", "Mohamed Abd Elmoniem", "Mohamed Abd El Moniem", "Mohamed Abd El Mon],
+          "alumniOf": "University of Maryland",
+          "email": "hamadmaad@gmail.com",
+          "url": "https://momoniem.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/-mae/",
+            "https://github.com/madamoniem"
+          ]
+        }
+        </script>
+
+
+</body>
+
+</html>
